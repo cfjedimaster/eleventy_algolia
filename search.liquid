@@ -3,6 +3,7 @@ layout: main
 ---
 
 <h2>Search</h2>
+<p/>
 {% raw %}
 <div id="app">
 	<input v-model="search" type="search"> <button @click="doSearch">Search</button>
@@ -37,7 +38,9 @@ const app = new Vue({
 			this.results = null;
 			if(this.search === '') return;
 			console.log('search for '+this.search);
-			let resultsRaw = await this.index.search(this.search);
+			let resultsRaw = await this.index.search(this.search,{
+				attributesToRetrieve:['title', 'url']
+			});
 			console.log('results', resultsRaw);
 			this.results = resultsRaw.hits;
 			this.numResults = resultsRaw.nbHits;
