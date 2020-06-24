@@ -1,0 +1,24 @@
+{
+  "name": "eleventy_algolia",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfjedimaster/eleventy_algolia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cfjedimaster/eleventy_algolia/issues"
+  },
+  "homepage": "https://github.com/cfjedimaster/eleventy_algolia#readme",
+  "dependencies": {
+    "algolia-indexing": "^1.0.1",
+    "node-fetch": "^2.6.0"
+  }
+}
